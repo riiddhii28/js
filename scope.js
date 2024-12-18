@@ -16,6 +16,8 @@ function function2(){
 }
 */
 
+/*
+
 //global
 let x = 3;
 
@@ -29,3 +31,22 @@ function function1(){
 function function2(){
     console.log(x);
 }
+*/
+
+//both? then local is preferred
+let x = 3;
+
+function1();
+function2();
+
+function function1(){
+    let x = 1;
+    console.log(x);  
+}
+
+function function2(){
+    let x = 2;
+    console.log(x);
+}
+
+//result is 1 and 2 (local)
