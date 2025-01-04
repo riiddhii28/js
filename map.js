@@ -14,8 +14,25 @@ function square(element){
 }
 */
 
+/*
 const students = ["Siddhi", "Khushi", "Rutvij", "Soham"];
+
+const upper = students.map(upperCase);
+
+console.log(upper);
 
 function upperCase(element){
     return element.toUpperCase();
+}
+*/
+
+const dates = ["2025-02-28", "2025-04-30", "2026-03-26"];
+
+const formattedDates = dates.map(formatDates);
+
+console.log(formattedDates);
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[2]}/${parts[1]}/${parts[0]}}`; //day,month,year jaise return hoga
 }
